@@ -1,0 +1,1 @@
+# Prode initgit add . commit -m first commitgit branch -M maingit remote add origin https://github.com/lucioRocca/Prode.gitgit push -u origin main
