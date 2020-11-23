@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class TorneoSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class TorneoSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('users')->insert([
+            'Torneo' => 'Superliga',
+        ]);
     }
 }

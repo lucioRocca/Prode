@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class FechaSeeder extends Seeder
 {
@@ -13,6 +14,10 @@ class FechaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('users')->insert([
+            'fecha' => 1,
+            'torneo_id' => 1,
+
+        ]);
     }
 }

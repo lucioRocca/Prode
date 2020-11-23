@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ValorSeeder extends Seeder
 {
@@ -13,6 +14,12 @@ class ValorSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('users')->insert([
+            'valor' => 50,
+            'premio1' => 1000,
+            'premio2' => 600,
+            'premio3' => 200,
+            'premio3' => 200,
+        ]);
     }
 }
