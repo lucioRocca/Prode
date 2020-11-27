@@ -14,8 +14,8 @@ class TorneoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'Torneo' => 'Superliga',
+        DB::table('torneos')->insert([
+            'nombre' => 'Superliga',
         ]);
     }
 }

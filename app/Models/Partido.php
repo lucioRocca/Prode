@@ -10,7 +10,9 @@ class Partido extends Model
     protected $fillable = [
         'equipoL_id',
         'equipoV_id',
+        'fecha_id',
     ];
+
     public function equipoL(){
         return $this->belongsTo('App\Models\Equipo', 'equipoL_id');
     }
@@ -32,6 +34,10 @@ class Partido extends Model
 
     public function apuestas(){
         return $this->hasMany('App\Models\Apuesta');
+    }
+
+    public function id(){
+        return $this->get('id');
     }
     use HasFactory;
 }

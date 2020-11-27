@@ -3,11 +3,11 @@
 namespace Database\Seeders;
 
 use Carbon\Carbon;
-use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
-class GrupoSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,10 +16,11 @@ class GrupoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('grupos')->insert([
-            'nombre' => Str::random(8),
-            'fecha_id' => 1,
-            'valor_id' => 1,
+        DB::table('users')->insert([
+            'name' => 'Lucio',
+            'type' => 'admin',
+            'email' => 'lucio@gmail.com',
+            'password' => Hash::make('123'),
             'created_at' => Carbon::now(),
         ]);
     }

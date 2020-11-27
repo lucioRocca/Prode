@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
 class ApuestaSeeder extends Seeder
 {
@@ -15,10 +15,13 @@ class ApuestaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Lucio',
-            'email' => 'Lucio@gmail.com',
-            'password' => Hash::make('123'),
+        DB::table('apuestas')->insert([
+            'equipoL' => 2,
+            'equipoV' => 0,
+            'partido_id' => 1,
+            'user_id' => 1,
+            'grupo_id' => 1,
+            'created_at' => Carbon::Now(),
         ]);
     }
 }

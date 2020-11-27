@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Grupo extends Model
 {
+    protected $fillable = [
+        'nombre',
+        'valor_id',
+        'fecha_id',
+    ];
+
     public function fecha(){
         return $this->belongsTo('App\Models\Fecha');
     }

@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fecha extends Model
 {
+    protected $fillable = [
+        'fecha',
+        'fecha_cierre',
+        'torneo_id',
+    ];
+
     public function grupos(){
         return $this->hasMany('App\Models\Grupo');
     }

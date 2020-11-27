@@ -14,13 +14,23 @@ class EquipoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('equipos')->insert([
             'nombre' => 'Talleres',
             'escudo' => '123.jpeg',
         ]);
 
-        DB::table('users')->insert([
+        DB::table('equipos')->insert([
             'nombre' => 'River',
+            'escudo' => '123.jpeg',
+        ]);
+
+        DB::table('equipos')->insert([
+            'nombre' => 'Boca',
+            'escudo' => '123.jpeg',
+        ]);
+
+        DB::table('equipos')->insert([
+            'nombre' => 'Racing',
             'escudo' => '123.jpeg',
         ]);
     }

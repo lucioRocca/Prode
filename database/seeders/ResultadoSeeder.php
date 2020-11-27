@@ -15,7 +15,7 @@ class ResultadoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('resultados')->insert([
             'equipoL' => 2,
             'equipoV' => 0,
             'partido_id' => 1,

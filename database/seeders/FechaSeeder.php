@@ -14,10 +14,10 @@ class FechaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('fechas')->insert([
             'fecha' => 1,
+            'fecha_cierre' => strtotime("27-11-2019 20:00:00"),
             'torneo_id' => 1,
-
         ]);
     }
 }

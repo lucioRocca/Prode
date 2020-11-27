@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Torneo extends Model
 {
+    protected $fillable = [
+        'nombre',
+    ];
+
     public function fechas(){
         return $this->hasMany('App\Models\Fecha');
     }

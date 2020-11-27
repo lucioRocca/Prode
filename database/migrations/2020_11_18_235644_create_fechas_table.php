@@ -18,6 +18,7 @@ class CreateFechasTable extends Migration
         Schema::create('fechas', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('fecha');
+            $table->unsignedBigInteger('fecha_cierre');
             $table->foreignId('torneo_id')->references('id')->on('torneos');
         });
     }

@@ -24,7 +24,7 @@ class PartidoController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -33,9 +33,10 @@ class PartidoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Partido $partido)
     {
-        //
+
+
     }
 
     /**
@@ -46,7 +47,7 @@ class PartidoController extends Controller
      */
     public function show(Partido $partido)
     {
-        //
+        
     }
 
     /**

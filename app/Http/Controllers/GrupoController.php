@@ -35,7 +35,20 @@ class GrupoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //fecha_id->fecha_cierre > carbon now
+        //policy if exists grup with less 50 users
+        $data = $request->validate([
+            'nombre' => 'required',
+            'fecha_id' => 'required',
+            'valor_id' => 'required',
+        ]);
+
+        Grupo::insert([
+            'nombre' => $data['nombre'],
+            'fecha_id' => $data['fecha_id'],
+            'valor_id' => $data['valor_id'],
+        ]);
+
     }
 
     /**

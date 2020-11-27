@@ -15,7 +15,8 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "laraveles/spanish": "^1.5",
-        "nesbot/carbon": "^2.41"
+        "nesbot/carbon": "^2.41",
+        "weidner/goutte": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

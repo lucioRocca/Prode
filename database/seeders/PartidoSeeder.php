@@ -14,9 +14,15 @@ class PartidoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('partidos')->insert([
             'equipoL_id' => 1,
             'equipoV_id' => 2,
+            'fecha_id' => 1,
+        ]);
+
+        DB::table('partidos')->insert([
+            'equipoL_id' => 3,
+            'equipoV_id' => 4,
             'fecha_id' => 1,
         ]);
     }
